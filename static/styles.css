@@ -50,7 +50,7 @@ a, button, body {
     top: 0;
     left: 0;
     z-index: 100;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 30px;
     padding: 10px 15px;
 }
@@ -60,13 +60,12 @@ a, button, body {
     top: 0;
     right: 0;
     z-index: 100;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 30px;
     padding: 10px 15px;
     background-color: transparent;
     border: none;
     text-align: right;
-    
 }
 .nav-dropdown .icon i {
     transition: 0.3s;
@@ -175,4 +174,13 @@ select {
     appearance: none;
     border-radius: 0;
     background-image: none;
+}
+
+
+.fade-in-section {
+    opacity: 0;
+    transition: opacity 0.8s
+}
+.fade-in-section.is-visible {
+    opacity: 1;
 }
