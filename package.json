@@ -1,0 +1,70 @@
+{
+  "name": "dreampeople",
+  "version": "0.1.0",
+  "homepage": "http://henrique-drai.github.io/dreampeople",
+  "private": true,
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-async-to-generator": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/polyfill": "^7.10.4",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/runtime": "^7.9.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@svgr/core": "^5.4.0",
+    "@svgr/webpack": "^5.4.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "babel-loader": "8.0.6",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "file-loader": "^6.0.0",
+    "moment": "^2.29.1",
+    "music-metadata-browser": "^2.1.4",
+    "node-sass": "^4.13.1",
+    "react": "^16.12.0",
+    "react-cookie": "^4.0.3",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^4.0.0",
+    "use-combined-reducers": "^1.0.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "webpack --config webpack.config.js --progress --colors --mode development",
+    "build:production": "webpack --config webpack.config.js --progress --colors --mode production",
+    "watch": "webpack --config webpack.config.js --watch --mode development",
+    "build:old": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "sass-loader": "^8.0.2",
+    "webpack-cli": "^3.3.11"
+  }
+}
