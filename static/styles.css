@@ -11,9 +11,7 @@ body {
     overflow: visible;
     height: auto;
     max-height: none;
-    color: #eda6b3;
     font-weight: 500;
-    text-shadow: 1px 1px 0px rgba(0,0,0,0.4);
 }
 a, button, body {
     color: #eda6b3;
@@ -150,7 +148,7 @@ a, button, body {
     background: #000000;
 }
 ::-webkit-scrollbar-thumb {
-    background: #53bede;
+    background: #eda6b3;
     border-radius: 0px;
     border: white 0px transparent
 }
