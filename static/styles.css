@@ -112,6 +112,14 @@ a, button, body {
     }
 }
 
+
+.songkick {
+    max-width: 600px;
+    margin: 50px auto;
+    min-height: 200px;
+}
+
+
 .footer-links {
     position: fixed;
     text-align: center;
