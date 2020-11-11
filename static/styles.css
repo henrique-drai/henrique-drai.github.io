@@ -60,7 +60,7 @@ a, button, body {
     top: 0;
     right: 0;
     z-index: 100;
-    font-weight: 500;
+    font-weight: 800;
     font-size: 30px;
     padding: 10px 15px;
     background-color: transparent;
@@ -113,9 +113,36 @@ a, button, body {
 
 
 .songkick {
-    max-width: 600px;
+    max-width: 800px;
     margin: 50px auto;
     min-height: 200px;
+}
+
+
+.about {
+    margin: auto;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    overflow: hidden;
+}
+.about .wrapper {
+    padding: 10px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: 0.5s;
+}
+.about.hidden .wrapper {
+    left: 100%;
+    right: -100%;
+}
+.about .text-hidden {
+    visibility: hidden;
 }
 
 

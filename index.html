@@ -19,14 +19,14 @@
     <title>DREAM PEOPLE</title>
     <link rel="icon" href="./static/media/favicon.png">
     <link rel="stylesheet" type="text/css" href="./static/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="./static/Raleway.css" rel="stylesheet" type="text/css">
     <link href="./static/styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
     <div class="background-video">
-        <video autoplay loop style="background-image:url('./static/media/background-poster.jpg')" muted playsinline >
+        <video autoplay loop style="background-image:url('./static/media/background-poster.jpg')" muted playsinline>
             <source src="./static/media/background-video.mp4">
         </video>
     </div>
@@ -37,17 +37,33 @@
         <div class="icon">
             <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
         </div>
-        
+
         <div class="items">
-            <a href="#about">ABOUT</a>
-            <a href="#tour">TOUR</a>
+            <a href="#about" id="link-about">ABOUT</a>
+            <a href="#tour" id="link-tour">TOUR</a>
         </div>
     </button>
 
-    <div style="margin-top: 100%;"><br></div>
+    <div style="height: 150px;" id="about"></div>
+
+    <section class="fade-in-section about hidden">
+        <div class="wrapper">
+            <div class="text">
+                Conheceram-se no Facebook em 2018. Em 2019 lançaram Soft Violence, disco de estreia que os levou a palcos tão emblemáticos como o Festival Vodafone Paredes de Coura e o Super Bock em Stock. Em 2020 sofreram um grande revés quando as suas contas foram hackeadas e apagadas. No entanto, numa surpreendente demonstração da solidariedade de toda a comunidade musical, conseguiram não só recuperar como dobrar a sua base de seguidores. Passada a tempestade, a bonança: a partir de Janeiro de 2021, os Dream People lançarão “Almost Young” o segundo EP da banda e o mais pessoal até à data.
+    
+                "Guardem os Dream People na vossa gaveta (...) ao lado dos Cocteau Twins, Slowdive (nas próximas malhas ouvirão porquê), Cigarettes After Sex (...)" - Arte-Factos
+            </div>
+            
+        </div>
+        <div class="text-hidden"></div>
+    </section>
+
+    <div style="margin-top: 33vh;"></div>
 
     <section class="songkick fade-in-section" id="tour">
-        <a href="https://www.songkick.com/artists/10066277" class="songkick-widget" data-theme="dark" data-track-button="on" data-detect-style="true" data-font-color="#eda6b3" data-background-color="transparent" data-locale="en">Dream People tour dates</a>
+        <a href="https://www.songkick.com/artists/10066277" class="songkick-widget" data-theme="dark"
+            data-track-button="on" data-detect-style="true" data-font-color="#eda6b3"
+            data-background-color="transparent" data-locale="en">Dream People tour dates</a>
     </section>
 
     <div class="footer-links">

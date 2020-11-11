@@ -1,5 +1,12 @@
 $(document).ready(function () {
 
+    placeHiddenText()
+
+    // só mostrar a secção about ao clicar "about"
+    $("#link-about").click(
+        () =>  $(".about").removeClass("hidden") 
+    )
+
     // Smooth scroll to anchor links
     $("a").on('click', function (event) {
 
@@ -26,4 +33,13 @@ $(document).ready(function () {
 
     observer.observe(document.querySelector('.fade-in-section'));
 
+    
+
 });
+
+
+
+function placeHiddenText() {
+    const text = $(".about .text").html();
+    $(".about .text-hidden").html(text);
+}
