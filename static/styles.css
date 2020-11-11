@@ -114,7 +114,7 @@ a, button, body {
 
 .songkick {
     max-width: 800px;
-    margin: 50px auto;
+    margin: 50px auto 100px;
     min-height: 200px;
 }
 
@@ -123,19 +123,27 @@ a, button, body {
     margin: auto;
     position: relative;
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     line-height: 1.5;
     white-space: pre-wrap;
     overflow: hidden;
 }
 .about .wrapper {
-    padding: 10px;
+    padding: 0px 50px;
     margin: auto;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     transition: 0.5s;
+}
+@media(max-width: 700px) {
+    .about .wrapper {
+        padding: 0px 10px;
+    }
+}
+.about .wrapper:hover {
+    background-color: rgba(0,0,0,0.5);
 }
 .about.hidden .wrapper {
     left: 100%;
@@ -156,8 +164,8 @@ a, button, body {
 .footer-links a {
     display: inline;
     padding: 0px 3px 0px;
-    margin: 0px 5px;
-    font-size: 20px;
+    margin: 0px 7px;
+    font-size: 22px;
     text-decoration: none;
     transition: 0.3s color;
 }
@@ -172,6 +180,33 @@ a, button, body {
     font-size: 12px;
 }
 
+.contacts {
+    width: 100%;
+    margin: 20px 0 66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.contacts .label {
+    text-align: center;
+    font-size: 12px;
+}
+.contacts .contact {
+    padding: 8px;
+}
+.contacts a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+.contacts a:hover {
+    color: white;
+}
+.contacts a i {
+    font-size: 10px;
+    position: relative;
+    top: -5px;
+}
 
 
 ::-webkit-scrollbar {
@@ -179,12 +214,11 @@ a, button, body {
     padding: 0px;
 }
 ::-webkit-scrollbar-track {
-    background: #000000;
+    background: #000;
 }
 ::-webkit-scrollbar-thumb {
     background: #eda6b3;
     border-radius: 0px;
-    border: white 0px transparent
 }
 ::selection {
     background: #c8b0ed;
