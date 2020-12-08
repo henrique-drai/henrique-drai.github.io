@@ -12,6 +12,7 @@ body {
     height: auto;
     max-height: none;
     font-weight: 500;
+    overflow-x: hidden;
 }
 a, button, body {
     color: #eda6b3;
@@ -45,8 +46,26 @@ a, button, body {
 }
 
 
-.nav-logo {
+nav {
+    left: 0;
+    right: 0;
+    top: 0;
     position: fixed;
+    min-height: 55px;
+    z-index: 100;
+    transition: 0.3s;
+}
+nav.scrolled {
+    background-color: #1f1f1c !important;
+}
+.nav-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+.nav-logo {
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 100;
@@ -57,13 +76,13 @@ a, button, body {
 
 .nav-dropdown {
     font-family: 'Raleway', sans-serif;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     z-index: 100;
-    font-weight: 800;
-    font-size: 30px;
-    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 18px 15px;
     background-color: transparent;
     border: none;
     text-align: right;
@@ -121,37 +140,32 @@ a, button, body {
 
 
 .about {
-    margin: auto;
-    position: relative;
+    margin: 50px 0;
     width: 100%;
-    max-width: 900px;
-    line-height: 1.5;
-    white-space: pre-wrap;
-    overflow: hidden;
+    /* overflow-x: hidden; */
+    position: relative;
 }
 .about .wrapper {
-    padding: 0px 50px;
-    margin: auto;
+    width: 110%;
+    padding: 50px 0px;
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
+    left: 50%;
     transition: 0.5s;
+    transform: translateX(-50%) rotate(1.5deg);
+    background-color: #eda6b3;
+    
 }
-@media(max-width: 700px) {
-    .about .wrapper {
-        padding: 0px 10px;
-    }
-}
-.about .wrapper:hover {
-    background-color: rgba(0,0,0,0.5);
-}
-.about.hidden .wrapper {
-    left: 100%;
-    right: -100%;
-}
-.about .text-hidden {
-    visibility: hidden;
+.about .text {
+    transform: rotate(-1.5deg);
+    padding: 0px 50px;
+    max-width: 1100px;
+    width: 100vw;
+    margin: auto;
+    line-height: 1.5;
+    color: #000;
+    white-space: pre-wrap;
+    text-shadow: none;
 }
 
 
@@ -185,22 +199,21 @@ a, button, body {
 
 .contacts {
     width: 100%;
-    margin: 20px 0 66px;
+    margin: 20px 0 0;
+    padding-bottom: 66px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
-.contacts .label {
-    text-align: center;
-    font-size: 12px;
-}
 .contacts .contact {
-    padding: 8px;
+    padding: 6px;
 }
 .contacts a {
     text-decoration: none;
     transition: 0.3s;
+    font-size: 20px;
+    font-weight: 700;
 }
 .contacts a:hover {
     color: white;
@@ -209,6 +222,21 @@ a, button, body {
     font-size: 10px;
     position: relative;
     top: -5px;
+}
+.epk {
+    padding: 8px 8px;
+    margin: 4px auto;
+    border: 1px solid #eda6b3;
+    border-radius: 3px;
+    width: max-content;
+}
+.epk .label {
+    font-size: 14px;
+    padding: 4px;
+}
+.epk a {
+    padding: 12px 8px;
+    font-size: 12px;
 }
 
 

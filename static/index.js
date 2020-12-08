@@ -1,11 +1,9 @@
 $(document).ready(function () {
 
-    placeHiddenText()
-
-    // só mostrar a secção about ao clicar "about"
-    $("#link-about").click(
-        () =>  $(".about").removeClass("hidden") 
-    )
+    $(document).scroll(function () {
+        var $nav = $("nav");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
 
     // Smooth scroll to anchor links
     $("a").on('click', function (event) {
@@ -19,27 +17,22 @@ $(document).ready(function () {
         }
     });
 
-    let observer = new IntersectionObserver( entries => {
-        entries.forEach( entry => {
+    let observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
             if (entry.isIntersecting) {
                 $(entry.target).addClass("is-visible")
             } else {
                 $(entry.target).removeClass("is-visible")
             }
-            
+
         })
-        
+
     });
 
     observer.observe(document.querySelector('.fade-in-section'));
 
-    
+
 
 });
 
 
-
-function placeHiddenText() {
-    const text = $(".about .text").html();
-    $(".about .text-hidden").html(text);
-}
