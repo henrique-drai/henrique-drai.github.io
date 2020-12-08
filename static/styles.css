@@ -14,6 +14,7 @@ body {
     font-weight: 500;
     overflow-x: hidden;
     margin: 0;
+    background-color: #000;
 }
 a, button, body {
     color: #eda6b3;
@@ -35,6 +36,7 @@ a, button, body {
 .background-video > video {
     background-size: cover;
     background-position: 50% 50%;
+    background-image: url('./static/media/background-poster.jpg');
     position: absolute;
     margin: auto;
     width: 100%;
@@ -44,6 +46,11 @@ a, button, body {
     top: -100%;
     left: -100%;
     object-fit: cover;
+    opacity: 1;
+    transition: 0.5s opacity;
+}
+.background-video > video.scrolled {
+    opacity: 0.5;
 }
 
 
@@ -57,7 +64,7 @@ nav {
     transition: 0.3s;
 }
 nav.scrolled {
-    background-color: #1f1f1c !important;
+    background-color: #161614 !important;
 }
 .nav-wrapper {
     position: relative;
@@ -70,9 +77,10 @@ nav.scrolled {
     top: 0;
     left: 0;
     z-index: 100;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 30px;
     padding: 10px 15px;
+    text-decoration: none;
 }
 
 .nav-dropdown {
@@ -146,8 +154,8 @@ nav.scrolled {
     /* overflow-x: hidden; */
     position: relative;
     padding: 50px 0px;
-    background-color: #eda6b3;
-    color: #111;
+    background-color:#161614;
+    color:  #eda6b3;
     text-shadow: none;
 }
 .about .wrapper {
