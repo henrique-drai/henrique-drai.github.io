@@ -144,28 +144,28 @@ nav.scrolled {
     width: 100%;
     /* overflow-x: hidden; */
     position: relative;
-}
-.about .wrapper {
-    width: 110%;
     padding: 50px 0px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transition: 0.5s;
-    transform: translateX(-50%) rotate(1.5deg);
-    background-color: #eda6b3;
-    
 }
 .about .text {
-    transform: rotate(-1.5deg);
+    position: relative;
+    z-index: 10;
     padding: 0px 50px;
     max-width: 1100px;
-    width: 100vw;
+    width: 100%;
     margin: auto;
     line-height: 1.5;
     color: #000;
     white-space: pre-wrap;
     text-shadow: none;
+}
+.about .tilted {
+    position: absolute;
+    top: 0;
+    left: -10%;
+    right: -10%;
+    bottom: 0;
+    transform: rotate(1.5deg);
+    background-color: #eda6b3;
 }
 
 
@@ -266,13 +266,4 @@ select {
     appearance: none;
     border-radius: 0;
     background-image: none;
-}
-
-
-.fade-in-section {
-    opacity: 0;
-    transition: opacity 0.8s
-}
-.fade-in-section.is-visible {
-    opacity: 1;
 }

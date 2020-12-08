@@ -17,21 +17,6 @@ $(document).ready(function () {
         }
     });
 
-    let observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                $(entry.target).addClass("is-visible")
-            } else {
-                $(entry.target).removeClass("is-visible")
-            }
-
-        })
-
-    });
-
-    observer.observe(document.querySelector('.fade-in-section'));
-
-
 
 });
 
