@@ -13,6 +13,7 @@ body {
     max-height: none;
     font-weight: 500;
     overflow-x: hidden;
+    margin: 0;
 }
 a, button, body {
     color: #eda6b3;
@@ -145,28 +146,23 @@ nav.scrolled {
     /* overflow-x: hidden; */
     position: relative;
     padding: 50px 0px;
+    background-color: #eda6b3;
+    color: #111;
+    text-shadow: none;
+}
+.about .wrapper {
+    max-width: 1100px;
+    width: 100%;
+    padding: 0px 50px;
+    margin: auto;
 }
 .about .text {
     position: relative;
-    z-index: 10;
-    padding: 0px 50px;
-    max-width: 1100px;
-    width: 100%;
-    margin: auto;
     line-height: 1.5;
-    color: #000;
     white-space: pre-wrap;
-    text-shadow: none;
+    
 }
-.about .tilted {
-    position: absolute;
-    top: 0;
-    left: -10%;
-    right: -10%;
-    bottom: 0;
-    transform: rotate(1.5deg);
-    background-color: #eda6b3;
-}
+
 
 
 .footer-links {
