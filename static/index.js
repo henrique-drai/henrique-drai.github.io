@@ -17,11 +17,6 @@ $(document).ready(function () {
             }, 500);
         }
     });
-
-    $('video').on('ended', function () {
-        this.load();
-        this.play();
-    });
 });
 
 
