@@ -4,24 +4,25 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="The official website of Dream People" name="description">
     <meta content="DREAM PEOPLE" property="og:title">
     <meta content="The official website of Dream People" property="og:description">
-    <meta content="./static/media/shared-links.jpg" property="og:image">
+    <!-- este link não pode ser relativo -->
+    <meta content="http://dreampeopleofficial.com/static/media/shared-links.jpg" property="og:image">
     <meta content="DREAM PEOPLE" property="twitter:title">
     <meta content="The official website of Dream People" property="twitter:description">
     <meta content="./static/media/shared-links.jpg" property="twitter:image">
-    <meta property="og:type" content="website">
+    <meta content="website" property="og:type">
     <meta content="summary_large_image" name="twitter:card">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>DREAM PEOPLE</title>
     <link rel="icon" href="./static/media/favicon.png">
     <link rel="stylesheet" type="text/css" href="./static/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="./static/Raleway.css" rel="stylesheet" type="text/css">
-    <link href="./static/styles.css?2" rel="stylesheet" type="text/css">
     <!-- podem alterar o número a seguir ao ? depois de fazerem alterações para forçar o css a ser refrescado pelos browsers -->
+    <link href="./static/styles.css?3" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -31,8 +32,9 @@
         -para alterar o vídeo ou imagem, basta substituir os ficheiros na pasta /static/media
     -->
     <div class="background-video">
-        <video autoplay loop muted playsinline>
+        <video autoplay loop muted playsinline style="background-image:url('./static/media/background-poster.jpg')">
             <source src="./static/media/background-video.mp4">
+            <source src="./static/media/background-video.webm">
         </video>
     </div>
 
@@ -81,7 +83,7 @@
 
     <div class="video">
         <div class="std-video-outter">
-            <iframe src="https://www.youtube.com/embed/idlj9Ne_QUE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/btPUdr_dU9Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
     
