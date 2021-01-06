@@ -185,7 +185,11 @@ nav.scrolled {
     position: relative;
     line-height: 1.5;
     white-space: pre-wrap;
-    
+}
+@media(max-width: 700px) {
+    .about .text {
+        font-size: 14px;
+    }
 }
 
 
