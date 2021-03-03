@@ -138,14 +138,14 @@ nav.scrolled {
     }
     .nav-dropdown .items a {
         display: block;
-        margin: 10px 0px 0px;
-        font-size: 20px;
+        margin: 14px 0px 0px;
+        font-size: 22px;
         z-index: 1;
         position: relative;
     }
     .nav-dropdown .filter{
-        background-color: black;
-        opacity: 0.5;
+        background-color: #0a0a0c;
+        opacity: 0.8;
         position: fixed;
         top: 0;
         left: 0;
