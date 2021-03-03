@@ -17,6 +17,11 @@ $(document).ready(function () {
             }, 500);
         }
     });
+
+
+    $(".nav-dropdown").on('click', function (event) {
+        $(this).toggleClass('show');
+    });
 });
 
 
