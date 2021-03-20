@@ -192,6 +192,26 @@ nav.scrolled {
 }
 
 
+.newsletter {
+    width: 100%;
+    text-align: center;
+    padding: 0px 20px;
+}
+.newsletter a {
+    border: 2px solid #eda6b3;
+    text-decoration: none;
+    padding: 14px 18px;
+    font-size: 26px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+.newsletter a:hover {
+    border-color: #fff;
+    color: #fff;
+    background-color: rgba(237, 166, 179, 0.1);
+}
+
+
 .video {
     display: block;
     width: 100%;
